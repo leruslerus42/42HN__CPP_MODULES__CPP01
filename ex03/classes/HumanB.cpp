@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 09:37:50 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/12 07:47:04 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:42:03 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@
  }
 
 void	HumanB::attack(){
-	if (this->_weapon == NULL)
-	 	std::cout << this->_name << "doesn't carry a weapon currently";
 	if (this->_weapon != NULL)
 	{
 		std::cout << this->_name << " attacks with their " << this->_weapon->getType() << std::endl;

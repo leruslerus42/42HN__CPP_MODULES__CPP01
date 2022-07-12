@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 13:21:43 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/11 22:07:09 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 13:10:48 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,39 @@
 #include <iostream>
 #include <fstream>
 
-int main()
+int main(int argc, char **argv)
 {
-	std::string s1 = "Lorem Ipsum";
-	std::string s2;
-	std::string s ;
-	std::cin >> s2; //take s2 as input
+	if (argc != 4)
+		return (0);
 
-	std::ifstream file;
-	file.open("prova.txt");
-	
-	if (file.is_open())
+	std::string	input = argv[1];
+	std::string	wordSrc = argv[2];
+	std::string	wordDest = argv[3];
+	std::string	line;
+	size_t		pos;
+	size_t		len = wordSrc.length();
+	std::ifstream inputFile(input);
+
+	std::ofstream outputFile("test.txt.replace");
+	int i = 0;
+	if(inputFile.is_open())
 	{
-		while (getline (file, s))
+		while (getline(inputFile, line))
 		{
-			if (s.find(s1, 0) != std::string::npos)
+			pos = line.find(wordSrc);//check till end line, this check just first word.
+			if (pos != std::string::npos)
 			{
-				std::cout << "PRESENT!" << std::endl;
+				while (pos != std::string::npos)
+				{
+					line.erase(pos, len);
+					line.insert(pos, wordDest);
+					pos = line.find(wordSrc);
+				}
 			}
-			
+			outputFile << line << std::endl;
 		}
 	}
-	file.close();
-	
-	//file << "Check";
-	file.close();
+	inputFile.close();
+	outputFile.close();
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 09:37:52 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/12 01:23:40 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:37:34 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,6 @@ class HumanA {
 	public:
 		HumanA(std::string	real_name, Weapon &weapon);
 		~HumanA();
-
-		// std::string	getName() const;
-		// void	setName(std::string);
 
 		void attack();
 };

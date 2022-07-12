@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 09:41:09 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/12 02:34:45 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:40:12 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ void		Weapon::setType(std::string real_name){
 	this->_type = real_name;
 }
 
-std::string &Weapon::getType() {
+std::string &Weapon::getType(){
 	return (this->_type);
 }

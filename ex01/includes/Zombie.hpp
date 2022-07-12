@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/09 03:05:32 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/10 07:21:48 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:28:49 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,5 @@ public:
 	Zombie*		newZombie(std::string);
 	void		randomChump(std::string name);
 };
+
+Zombie*	zombieHorde( int N, std::string name);

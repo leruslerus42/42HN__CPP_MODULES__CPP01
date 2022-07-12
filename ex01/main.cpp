@@ -6,7 +6,7 @@
 /*   By: rrajaobe <rrajaobe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 07:35:20 by rrajaobe          #+#    #+#             */
-/*   Updated: 2022/07/10 08:30:32 by rrajaobe         ###   ########.fr       */
+/*   Updated: 2022/07/12 12:32:20 by rrajaobe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ Implement your own tests to ensure your zombieHorde() function works as expected
 Don’t forget to delete all the zombies and check for memory leaks.
 */
 
-Zombie*	zombieHorde( int N, std::string name);
 
 int main()
 {
