@@ -2,7 +2,10 @@
 The goal of the C++ modules 00 to 08 is to introduce the student to Object-Oriented Programming and the C++ programming language in general. 
 
 ## TOPICS
-Memory allocation, pointers to members, references, switch statement.
+- Memory allocation 
+- Pointers to members
+- References
+- Switch statement.
 
 ## DESCRIPTION
 - ex00: Allocate different objects on the heap and on the stack, so difference between 'new' and 'delete' 
